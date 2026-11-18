@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>四大经典名方 · 包装设计方案提案</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231B1A17'/%3E%3Crect x='7' y='7' width='18' height='18' fill='none' stroke='%239E2B25' stroke-width='2'/%3E%3Ctext x='16' y='22' font-size='13' fill='%23F3EFE4' text-anchor='middle' font-family='serif'%3E方%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@400;600;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap">
+<style>
+:root{
+  --ink:#1B1A17;
+  --ink-2:#403C35;
+  --paper:#F5F1E6;
+  --paper-2:#EDE7D8;
+  --line:#CFC6B2;
+  --seal:#9E2B25;
+  --p1:#8A5B3C; --p2:#5C7A4A; --p3:#9A6A22; --p4:#2F4B6E;
+  --serif:"Noto Serif SC",Songti SC,SimSun,Georgia,serif;
+  --sans:"Noto Sans SC",-apple-system,"Microsoft YaHei",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-weight:400;
+  font-size:15px;line-height:1.75;
+  letter-spacing:.01em;
+}
+img{display:block;max-width:100%}
+.wrap{max-width:1240px;margin:0 auto;padding:0 40px}
+
+/* ---------- 顶栏 ---------- */
+.topbar{
+  position:sticky;top:0;z-index:50;
+  background:rgba(245,241,230,.94);
+  border-bottom:1px solid var(--line);
+  backdrop-filter:blur(6px);
+}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:24px}
+.brandmark{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.12em;color:var(--ink-2)}
+.sealbox{
+  width:22px;height:22px;border:1.5px solid var(--seal);color:var(--seal);
+  display:grid;place-items:center;font-family:var(--serif);font-size:13px;line-height:1;flex:none;
+}
+.nav{display:flex;gap:26px;font-size:13px;color:var(--ink-2)}
+.nav a{color:inherit;text-decoration:none;padding-bottom:2px;border-bottom:1px solid transparent;white-space:nowrap}
+.nav a:hover{border-bottom-color:var(--seal);color:var(--ink)}
+.nav a i{font-style:normal;color:var(--seal);margin-right:5px}
+
+/* ---------- 首屏 ---------- */
+.hero{padding:76px 0 64px;border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;grid-template-columns:1.45fr .78fr;gap:56px;align-items:end}
+h1{
+  font-family:var(--serif);font-weight:900;
+  font-size:clamp(34px,5vw,62px);line-height:1.16;letter-spacing:.02em;
+}
+h1 em{font-style:normal;color:var(--seal)}
+.lede{
+  margin-top:22px;font-size:17px;color:var(--ink-2);max-width:34em;line-height:1.85;
+}
+.lede strong{font-weight:700;color:var(--ink);border-bottom:2px solid var(--seal)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-left:1px solid var(--line)}
+.facts div{padding:0 0 6px 18px;border-right:1px solid var(--line)}
+.facts div:last-child{border-right:none}
+.facts b{
+  display:block;font-family:var(--serif);font-weight:900;font-size:34px;line-height:1.1;
+}
+.facts span{display:block;font-size:12px;color:var(--ink-2);letter-spacing:.08em;margin-top:6px}
+
+.heroimg{margin-top:52px;border-top:1px solid var(--line)}
+.heroimg img{width:100%;aspect-ratio:2047/1152;object-fit:cover}
+.heroimg figcaption{
+  display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+  padding:12px 0 20px;font-size:12px;color:var(--ink-2);letter-spacing:.06em;
+}
+
+/* ---------- 章节通用 ---------- */
+section{padding:88px 0}
+.sec-head{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start;padding-bottom:26px;border-bottom:2px solid var(--ink)}
+.sec-no{
+  font-family:var(--serif);font-weight:900;font-size:clamp(30px,4vw,46px);line-height:1;color:var(--seal);
+  padding-top:4px;
+}
+.sec-head h2{font-family:var(--serif);font-weight:900;font-size:clamp(24px,3vw,34px);line-height:1.3}
+.sec-head p{margin-top:10px;font-size:14px;color:var(--ink-2);max-width:52em}
+
+/* ---------- 一 · 三套风格 ---------- */
+.stylerow{margin-top:52px}
+.stylerow + .stylerow{padding-top:30px;border-top:1px solid var(--line)}
+.stylebar{display:grid;grid-template-columns:190px 1fr auto;gap:24px;align-items:baseline;margin-bottom:22px}
+.skey{font-family:var(--serif);font-weight:900;font-size:22px;letter-spacing:.04em}
+.skey i{font-style:normal;font-size:40px;color:var(--seal);margin-right:8px;vertical-align:-4px}
+.sdesc{font-size:13.5px;color:var(--ink-2)}
+.sdesc b{color:var(--ink);font-weight:700}
+.badge{
+  font-size:11.5px;letter-spacing:.14em;color:var(--seal);
+  border:1px solid var(--seal);padding:4px 10px;white-space:nowrap;
+}
+.packgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.card{min-width:0}
+.card figure{background:var(--paper-2);border:1px solid var(--line);overflow:hidden}
+.card img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.card figcaption{padding:10px 2px 0;display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.card figcaption b{font-size:13.5px;font-weight:700}
+.card figcaption span{font-size:12.5px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.card.wide img{aspect-ratio:4/3}
+.rowshot{margin-top:20px;border:1px solid var(--line);background:var(--paper-2)}
+.rowshot img{width:100%;display:block}
+.rowshot figcaption{padding:9px 14px;font-size:12px;color:var(--ink-2);letter-spacing:.05em;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+/* ---------- 二 · 市场收集 ---------- */
+.notes{
+  margin-top:24px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;
+  background:var(--paper-2);border:1px solid var(--line);padding:22px 26px;
+}
+.notes div{min-width:0}
+.notes h4{font-size:12.5px;letter-spacing:.1em;color:var(--seal);margin-bottom:6px}
+.notes p{font-size:13px;color:var(--ink-2);line-height:1.7}
+
+.pgroup{margin-top:52px}
+.phead{display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:baseline;padding-bottom:12px;border-bottom:1px solid var(--ink)}
+.pdot{width:9px;height:9px;border-radius:50%;flex:none;display:inline-block;margin-right:8px}
+.phead h3{font-family:var(--serif);font-weight:900;font-size:20px}
+.phead .cfind{font-size:13px;color:var(--ink-2);line-height:1.6}
+.phead .cprice{font-family:var(--serif);font-weight:900;font-size:16px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.phead .cprice small{font-size:11px;font-weight:400;color:var(--ink-2);letter-spacing:.06em;display:block;text-align:right}
+.kgrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px 14px;margin-top:18px}
+.kitem{min-width:0}
+.kimg{aspect-ratio:1/1;background:#fff;border:1px solid var(--line);display:grid;place-items:center;overflow:hidden;position:relative}
+.kimg img{width:100%;height:100%;object-fit:contain}
+.tag{
+  position:absolute;left:0;top:0;z-index:2;
+  background:var(--ink);color:var(--paper);
+  font-size:10.5px;letter-spacing:.1em;padding:3px 8px;
+}
+.tag.hot{background:var(--seal)}
+.kcap{margin-top:6px;font-size:11.5px;line-height:1.5;color:var(--ink)}
+.kcap b{display:block;font-weight:700;font-size:12px}
+.kcap span{display:block;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.note-cell{
+  grid-column:span 4;border-left:1px solid var(--line);
+  padding:2px 0 2px 24px;display:flex;flex-direction:column;justify-content:center;gap:8px;min-width:0;
+}
+.note-cell h5{font-size:11.5px;letter-spacing:.14em;color:var(--seal)}
+.note-cell p{font-family:var(--serif);font-weight:600;font-size:16px;line-height:1.6}
+.note-cell small{font-size:12px;color:var(--ink-2);line-height:1.7}
+
+.riskstrip{
+  margin-top:56px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  padding:18px 0;display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center;
+}
+.riskstrip h4{font-size:12.5px;letter-spacing:.1em;color:var(--seal);white-space:nowrap}
+.riskline{display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-size:13px}
+.riskline .chip{padding:3px 10px;border:1px solid var(--ink);font-variant-numeric:tabular-nums}
+.riskline .chip.hot{border-color:var(--seal);color:var(--seal);font-weight:700}
+.riskline .arrow{color:var(--ink-2);font-size:12px}
+
+/* ---------- 三 · 提取总结 ---------- */
+.school{margin-top:22px}
+.school table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:13.5px}
+.school col:nth-child(1){width:17%}
+.school col:nth-child(2){width:23%}
+.school col:nth-child(3){width:30%}
+.school col:nth-child(4){width:30%}
+.school th{
+  text-align:left;font-weight:400;font-size:11.5px;letter-spacing:.12em;color:var(--ink-2);
+  padding:10px 14px 10px 0;border-bottom:1px solid var(--ink);
+}
+.school td{padding:16px 14px 16px 0;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.7}
+.school td:first-child{font-family:var(--serif);font-weight:900;font-size:15px}
+.school td.take{color:var(--ink)}
+.school td.take.no{color:var(--seal)}
+
+.facts3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:0;border-left:1px solid var(--line)}
+.facts3 div{padding:20px 24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-width:0}
+.facts3 b{display:block;font-family:var(--serif);font-weight:900;font-size:21px;line-height:1.35;margin-bottom:6px}
+.facts3 span{font-size:12.5px;color:var(--ink-2);line-height:1.7}
+
+.subhead{margin-top:64px;display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--ink);padding-bottom:10px}
+.subhead h3{font-family:var(--serif);font-weight:900;font-size:19px}
+.subhead span{font-size:12.5px;color:var(--ink-2);letter-spacing:.06em}
+
+.rules{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-left:1px solid var(--line)}
+.rule{padding:22px 26px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);min-width:0}
+.rule b{display:block;font-family:var(--serif);font-weight:900;font-size:15.5px;margin-bottom:6px}
+.rule p{font-size:13px;color:var(--ink-2);line-height:1.75}
+
+.formula{margin-top:64px;border:1px solid var(--ink);display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.fcol{padding:24px 26px;border-right:1px solid var(--line);min-width:0}
+.fcol:last-child{border-right:none}
+.fcol i{
+  font-style:normal;font-family:var(--serif);font-weight:900;font-size:34px;line-height:1;
+  display:block;margin-bottom:10px;
+}
+.fcol h4{font-size:14px;font-weight:700;margin-bottom:8px}
+.fcol p{font-size:12.5px;color:var(--ink-2);line-height:1.75}
+.fresult{
+  grid-column:1 / -1;background:var(--ink);color:var(--paper);padding:22px 26px;
+  display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;
+}
+.fresult span{font-size:11.5px;letter-spacing:.14em;opacity:.7}
+.fresult b{font-family:var(--serif);font-weight:900;font-size:22px}
+
+.decide{margin-top:64px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.decide article{border-top:3px solid var(--seal);padding-top:16px;min-width:0}
+.decide h4{font-family:var(--serif);font-weight:900;font-size:16px;margin-bottom:8px}
+.decide p{font-size:13px;color:var(--ink-2);line-height:1.75}
+.decide p b{color:var(--ink)}
+
+/* ---------- 页脚 ---------- */
+footer{background:var(--ink);color:var(--paper);padding:56px 0 64px}
+footer .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+footer h3{font-family:var(--serif);font-weight:900;font-size:18px;margin-bottom:16px}
+footer ul{list-style:none;font-size:13px;line-height:2.1}
+footer li{display:flex;gap:10px}
+footer li span{opacity:.55;font-variant-numeric:tabular-nums;flex:none}
+footer .warn{font-size:12.5px;line-height:1.9;opacity:.85}
+footer .warn em{font-style:normal;color:#E9B9B4}
+
+/* ---------- 窄屏 ---------- */
+@media (max-width:1000px){
+  .wrap{padding:0 22px}
+  .note-cell{grid-column:1 / -1;border-left:none;border-top:1px solid var(--line);padding:18px 0 0;}
+  .hero .wrap{grid-template-columns:1fr;gap:34px}
+  .facts{grid-template-columns:repeat(3,1fr);border-left:none}
+  .facts div{padding-left:0;border-right:none}
+  .packgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stylebar{grid-template-columns:1fr;gap:8px}
+  .notes{grid-template-columns:1fr;gap:18px}
+  .kgrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .phead{grid-template-columns:1fr;gap:6px}
+  .phead .cprice small{text-align:left}
+  .facts3{grid-template-columns:1fr}
+  .rules{grid-template-columns:1fr}
+  .formula{grid-template-columns:1fr}
+  .fcol{border-right:none;border-bottom:1px solid var(--line)}
+  .decide{grid-template-columns:1fr}
+  footer .wrap{grid-template-columns:1fr;gap:34px}
+  .nav{display:none}
+}
+@media (max-width:620px){
+  .kgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .school table{font-size:12px}
+  .school td{padding-right:8px}
+  section{padding:60px 0}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== 顶栏 ===== -->
+<header class="topbar">
+  <div class="wrap">
+    <div class="brandmark"><span class="sealbox">方</span>四大经典名方 · 包装提案</div>
+    <nav class="nav">
+      <a href="#s1"><i>01</i>五套风格</a>
+      <a href="#s2"><i>02</i>市场收集</a>
+      <a href="#s3"><i>03</i>设计提取</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== 首屏 ===== -->
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>四大经典名方，<br><em>包装提案</em></h1>
+      <p class="lede">异功散、桔梗汤、保元汤、开心散，做成四款固体饮料。我们把对手里<strong>同一剂型</strong>的真包装摸了一遍——淘宝上这个形态其实不多，四个赛道拢共 36 个。风格试了五套、共 20 版——这一版只看设计，不比价格，等您定三件事。</p>
+    </div>
+    <div class="facts">
+      <div><b>4</b><span>款产品</span></div>
+      <div><b>20</b><span>版包装设计</span></div>
+      <div><b>36</b><span>个同剂型对手</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 01 三套风格 ===== -->
+<section id="s1">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">01</div>
+      <div>
+        <h2>五套风格，20 版设计</h2>
+        <p>同一个系列骨架下，五种不同的“古方脸”。每行四款是同一风格，竖着看是同一产品换五种。横向比风格，纵向比一致性。四款并排的陈列图分别放在每一行的下沿，用来验证系列感。</p>
+      </div>
+    </div>
+
+    <div class="stylerow">
+      <div class="stylebar">
+        <div class="skey"><i>A</i>汉方书卷</div>
+        <div class="sdesc"><b>米白纸面 + 单色墨线 + 竖排品名。</b>最接近药小七、大道居、火星暖暖这一派同剂型对手的货架语言，也是四款共用结构最稳的一套。</div>
+        <div class="badge">建议以此打底</div>
+      </div>
+      <div class="packgrid">
+        <div class="card"><figure><img src="a_01.jpg" alt="异功散 A 汉方书卷"></figure><figcaption><b>异功散</b></figcaption></div>
+        <div class="card"><figure><img src="a_02.jpg" alt="桔梗汤 A 汉方书卷"></figure><figcaption><b>桔梗汤</b></figcaption></div>
+        <div class="card"><figure><img src="a_03.jpg" alt="保元汤 A 汉方书卷"></figure><figcaption><b>保元汤</b></figcaption></div>
+        <div class="card"><figure><img src="a_04.jpg" alt="开心散 A 汉方书卷"></figure><figcaption><b>开心散</b></figcaption></div>
+      </div>
+    </div>
+
+    <div class="stylerow">
+      <div class="stylebar">
+        <div class="skey"><i>B</i>药柜图谱</div>
+        <div class="sdesc"><b>深底色 + 细格线 + 每味药一张标本卡。</b>把“几味药”变成看得见的档案，最像专业药房，也最不像零食。</div>
+        <div class="badge" style="color:var(--ink-2);border-color:var(--line)">备选</div>
+      </div>
+      <div class="packgrid">
+        <div class="card"><figure><img src="b_01.jpg" alt="异功散 B 药柜图谱"></figure><figcaption><b>异功散</b></figcaption></div>
+        <div class="card"><figure><img src="b_02.jpg" alt="桔梗汤 B 药柜图谱"></figure><figcaption><b>桔梗汤</b></figcaption></div>
+        <div class="card"><figure><img src="b_03.jpg" alt="保元汤 B 药柜图谱"></figure><figcaption><b>保元汤</b></figcaption></div>
+        <div class="card"><figure><img src="b_04.jpg" alt="开心散 B 药柜图谱"></figure><figcaption><b>开心散</b></figcaption></div>
+      </div>
+    </div>
+
+    <div class="stylerow">
+      <div class="stylebar">
+        <div class="skey"><i>C</i>现代配方</div>
+        <div class="sdesc"><b>大色块 + 横排大字 + 几何化配方结构。</b>货架上最跳的一套，适合线上主图，但离“古方”最远。</div>
+        <div class="badge" style="color:var(--ink-2);border-color:var(--line)">备选</div>
+      </div>
+      <div class="packgrid">
+        <div class="card"><figure><img src="c_01.jpg" alt="异功散 C 现代配方"></figure><figcaption><b>异功散</b></figcaption></div>
+        <div class="card"><figure><img src="c_02.jpg" alt="桔梗汤 C 现代配方"></figure><figcaption><b>桔梗汤</b></figcaption></div>
+        <div class="card"><figure><img src="c_03.jpg" alt="保元汤 C 现代配方"></figure><figcaption><b>保元汤</b></figcaption></div>
+        <div class="card"><figure><img src="c_04.jpg" alt="开心散 C 现代配方"></figure><figcaption><b>开心散</b></figcaption></div>
+      </div>
+    </div>
+
+    <div class="stylerow">
+      <div class="stylebar">
+        <div class="skey"><i>D</i>色彩版</div>
+        <div class="sdesc"><b>大面积品牌色 ＋ 顶视药材主视觉 ＋ 竖排品名。</b>货架三米外最先被看见的一组，线上主图和促销位最占便宜。</div>
+        <div class="badge" style="color:var(--ink-2);border-color:var(--line)">备选</div>
+      </div>
+      <div class="packgrid">
+        <div class="card"><figure><img src="e_01.jpg" alt="异功散 D 色彩版"></figure><figcaption><b>异功散</b></figcaption></div>
+        <div class="card"><figure><img src="e_02.jpg" alt="桔梗汤 D 色彩版"></figure><figcaption><b>桔梗汤</b></figcaption></div>
+        <div class="card"><figure><img src="e_03.jpg" alt="保元汤 D 色彩版"></figure><figcaption><b>保元汤</b></figcaption></div>
+        <div class="card"><figure><img src="e_04.jpg" alt="开心散 D 色彩版"></figure><figcaption><b>开心散</b></figcaption></div>
+      </div>
+      <figure class="rowshot">
+        <img src="lineup.jpg" alt="色彩版四款并排陈列">
+        <figcaption><span>色彩版四款并排 · 同一套结构，四个色系</span><span>验证系列感</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="stylerow">
+      <div class="stylebar">
+        <div class="skey"><i>E</i>礼盒版</div>
+        <div class="sdesc"><b>翻盖礼盒 ＋ 内衬 ＋ 三支条袋，盒面加一枚朱红「四大经典名方」印章。</b>适合礼赠与节庆档，不宜做日常货架主力——成本、体积、开盒步骤都上去了。</div>
+        <div class="badge" style="color:var(--ink-2);border-color:var(--line)">礼赠场景</div>
+      </div>
+      <div class="packgrid">
+        <div class="card wide"><figure><img src="f_01.jpg" alt="异功散 E 礼盒版"></figure><figcaption><b>异功散</b><span>礼盒 · 3g×15袋</span></figcaption></div>
+        <div class="card wide"><figure><img src="f_02.jpg" alt="桔梗汤 E 礼盒版"></figure><figcaption><b>桔梗汤</b><span>礼盒 · 3g×15袋</span></figcaption></div>
+        <div class="card wide"><figure><img src="f_03.jpg" alt="保元汤 E 礼盒版"></figure><figcaption><b>保元汤</b><span>礼盒 · 3g×30袋</span></figcaption></div>
+        <div class="card wide"><figure><img src="f_04.jpg" alt="开心散 E 礼盒版"></figure><figcaption><b>开心散</b><span>礼盒 · 3g×15袋</span></figcaption></div>
+      </div>
+      <figure class="rowshot">
+        <img src="f_lineup.jpg" alt="礼盒版四款合集">
+        <figcaption><span>礼盒版四款合集 · 开盒状态，内衬承托三条袋</span><span>礼赠档的完整形态</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 02 市场收集 ===== -->
+<section id="s2" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">02</div>
+      <div>
+        <h2>市场风格收集：36 个同剂型对手</h2>
+        <p>这是他们的画法全集：只留固体饮料——冲调粉、颗粒、条袋、罐装粉，口服液、植物饮、酵素饮、膏滋、OTC 颗粒全部剔除。这一节回答一件事：货架上的脸都长什么样。</p>
+      </div>
+    </div>
+
+    <div class="notes">
+      <div><h4>筛法</h4><p>淘宝按销量排序逐页筛，再按剂型逐条判定，只保留固体饮料类。</p></div>
+      <div><h4>销量口径</h4><p>只记页面当时显示的数字；“全店售 N 件”是整店累计，不与“N 人付款”横向比。</p></div>
+      <div><h4>没数字的</h4><p>页面未显示销量的写“未见数字”，不估算、不凑整；罐装与袋装都标注清楚。</p></div>
+    </div>
+
+    <!-- 异功散 -->
+    <div class="pgroup">
+      <div class="phead">
+        <h3><span class="pdot" style="background:var(--p1)"></span>异功散 · 脾胃调理</h3>
+        <div class="cfind">9 个山楂茯苓包里，8 个走的是同一条路：白底或浅米底、横排大字品名、食材插画。唯一分得开的是大道居的墨绿底加朱印。这组不缺对手，缺一张能被记住的脸。</div>
+      </div>
+      <div class="kgrid">
+        <div class="kitem"><div class="kimg"><span class="tag">同形态</span><img src="k1_01.jpg" alt="埤盾 茯苓薏苡仁固体饮料"></div><div class="kcap"><b>埤盾</b>茯苓薏苡仁固体饮料 6g×30<span>999+付款</span></div></div>
+        <div class="kitem"><div class="kimg"><span class="tag">同形态</span><img src="k1_02.jpg" alt="大道居 参有10号 人参茯苓固体饮料"></div><div class="kcap"><b>大道居·参有10号</b>人参茯苓 3g×15<span>999+付款</span></div></div>
+        <div class="kitem"><div class="kimg"><span class="tag hot">20万+付款</span><img src="k1_03.jpg" alt="南京同仁堂 山楂茯苓固体饮料"></div><div class="kcap"><b>南京同仁堂</b>山楂茯苓固体饮料 10g×15<span>20万+付款</span></div></div>
+        <div class="kitem"><div class="kimg"><span class="tag">10万+付款</span><img src="k1_04.jpg" alt="南京同仁堂 山楂茯苓特殊膳食"></div><div class="kcap"><b>南京同仁堂</b>山楂茯苓特殊膳食 200g<span>10万+付款</span></div></div>
+        <div class="kitem"><div class="kimg"><span class="tag">3万+付款</span><img src="k1_05.jpg" alt="安济昌 山楂茯苓铁颗粒"></div><div class="kcap"><b>安济昌</b>山楂茯苓铁颗粒 10g×20<span>3万+付款</span></div></div>
+        <div class="kitem"><div class="kimg"><img src="k1_06.jpg" alt="哈药 山楂茯苓固体饮料"></div><div class="kcap"><b>哈药</b>山楂茯苓固体饮料 3 盒装<span>1000+付款</span></div></div>
+        <div class="kitem"><div class="kimg"><span class="tag">同形态</span><img src="k1_07.jpg" alt="药小七 内金茯苓汤 汉方颗粒"></div><div class="kcap"><b>药小七</b>内金茯苓汤 4g×20袋<span>999+付款</span></div></div>
+        <div class="kitem"><div class="kimg"><img src="k1_08.jpg" alt="养益君 鸡内金山楂六物颗粒"></div><div class="kcap"><b>养益君</b>鸡内金山楂六物颗粒 8g×30<span>999+付款</span></div></div>
+        <div class="kitem"><div class="kimg"><img src="k1_09.jpg" alt="神农金康 山楂鸡内金颗粒"></div><div class="kcap"><b>神农金康</b>山楂鸡内金颗粒 6g×12<span>999+付款</span></div></div>
+      </div>
+    </div>
+
+    <!-- 桔梗汤 -->
+    <div class="pgroup">
+      <div class="phead">
+        <h3><span class="pdot" style="background:var(--p2)"></span>桔梗汤 · 宣肺利咽</h3>
+        <div class="cfind">这组两极：药小七、菩茵堂走古方克制，安童金方、贝蓓臻护走罐装加器官图形。中间那一档“既不古也不现代”的白底盒最多，也最没记忆点。</div>
+      </div>
+      <div class="kgrid">
+        <div class="kitem"><div class="kimg"><span class="tag hot">同方同型</span><img src="k2_06.jpg" alt="药小七 桔梗汤 汉方颗粒"></div><div class="kcap"><b>药小七</b>桔梗汤 4g×20袋<span>全店1000+</span></div></div>
+        <div class="kitem"><div class="kimg"><span class="tag hot">同方同型</span><img src="k2_02.jpg" alt="菩茵堂 桔梗汤 特殊膳食"></div><div class="kcap"><b>菩茵堂</b>桔梗汤 4g×15袋<span>已售500+</span></div></div>
+        <div class="kitem"><div class="kimg"><img src="k2_01.jpg" alt="火星暖暖 桔梗汤"></div><div class="kcap"><b>火星暖暖</b>桔梗汤 4g×16袋<span>999+付款</span></div></div>
+        <div class="kitem"><div class="kimg"><img src="k2_03.jpg" alt="沐迎康 紫苏甘草桔梗"></div><div class="kcap"><b>沐迎康</b>紫苏甘草桔梗<span>999+付款</span></div></div>
+        <div class="kitem"><div class="kimg"><img src="k2_04.jpg" alt="南京同仁堂绿金家园 桔梗甘草汤"></div><div class="kcap"><b>南京同仁堂绿金家园</b>桔梗甘草汤 3g×12<span>999+付款</span></div></div>
+        <div class="kitem"><div class="kimg"><img src="k2_05.jpg" alt="白云山 桔梗甘草汤 固体饮料"></div><div class="kcap"><b>白云山（北京）健康科技</b>桔梗甘草汤 5g×10<span>999+付款</span></div></div>
+        <div class="kitem"><div class="kimg"><img src="k2_07.jpg" alt="佳婕 桔梗汤 固体饮料"></div><div class="kcap"><b>佳婕</b>桔梗汤 4g×10袋<span>999+付款</span></div></div>
+        <div class="kitem"><div class="kimg"><span class="tag">罐装</span><img src="k2_08.jpg" alt="安童金方 桔梗甘草汤 罐装"></div><div class="kcap"><b>安童金方</b>桔梗甘草汤 8g×15<span>999+付款</span></div></div>
+        <div class="kitem"><div class="kimg"><span class="tag">罐装</span><img src="k2_09.jpg" alt="贝蓓臻护 甘草桔梗固体饮料 罐装"></div><div class="kcap"><b>贝蓓臻护</b>甘草桔梗 4g×22袋<span>999+付款</span></div></div>
+      </div>
+    </div>
+
+    <!-- 保元汤 -->
+    <div class="pgroup">
+      <div class="phead">
+        <h3><span class="pdot" style="background:var(--p3)"></span>保元汤 · 补气温阳</h3>
+        <div class="cfind">补气类的脸最统一：深棕、暗金、朱红，大字打“参”“黄芪”，互相很难拉开。反而是平安津村的浅黄盒、Ovilz 的留白条袋更安静——这组说明安静也能被看见。</div>
+      </div>
+      <div class="kgrid">
+        <div class="kitem"><div class="kimg"><img src="k3_07.jpg" alt="南京同仁堂 双参黄芪特殊膳食"></div><div class="kcap"><b>南京同仁堂</b>双参黄芪特殊膳食 7g×15<span>999+付款</span></div></div>
+        <div class="kitem"><div class="kimg"><span class="tag hot">100万+付款</span><img src="k3_08.jpg" alt="南京同仁堂 双参黄芪固体饮料 30条"></div><div class="kcap"><b>南京同仁堂</b>双参黄芪 7g×30<span>100万+付款</span></div></div>
+        <div class="kitem"><div class="kimg"><img src="k3_05.jpg" alt="平安津村 黄芪饮固体饮料"></div><div class="kcap"><b>平安津村</b>黄芪饮固体饮料 5g×10<span>1000+付款</span></div></div>
+        <div class="kitem"><div class="kimg"><img src="k3_06.jpg" alt="南京同仁堂六和乾坤 双参黄芪"></div><div class="kcap"><b>南京同仁堂（六和乾坤）</b>双参黄芪 5g×30<span>3万+付款</span></div></div>
+        <div class="kitem"><div class="kimg"><img src="k3_04.jpg" alt="北京同仁堂（四川）当归黄芪铁颗粒"></div><div class="kcap"><b>北京同仁堂（四川）</b>当归黄芪铁颗粒 10g×15<span>1000+付款</span></div></div>
+        <div class="kitem"><div class="kimg"><img src="k3_09.jpg" alt="南京同仁堂 砂斛参苓黄芪固体饮料"></div><div class="kcap"><b>南京同仁堂（六和乾坤）</b>砂斛参苓黄芪 7g×10<span>600+付款</span></div></div>
+        <div class="kitem"><div class="kimg"><img src="k3_03.jpg" alt="世宴 人参固体饮料"></div><div class="kcap"><b>世宴</b>人参固体饮料<span>82人付款</span></div></div>
+        <div class="kitem"><div class="kimg"><span class="tag">同形态</span><img src="k3_01.jpg" alt="人参黄芪速溶颗粒"></div><div class="kcap"><b>人参黄芪</b>速溶颗粒 7g×15<span>未见数字 · 0 人付款</span></div></div>
+        <div class="kitem"><div class="kimg"><span class="tag">同形态</span><img src="k3_02.jpg" alt="Ovilz 黄芪黄精红参"></div><div class="kcap"><b>Ovilz</b>黄芪黄精红参<span>5 人付款</span></div></div>
+      </div>
+    </div>
+
+    <!-- 开心散 -->
+    <div class="pgroup">
+      <div class="phead">
+        <h3><span class="pdot" style="background:var(--p4)"></span>开心散 · 安神助眠</h3>
+        <div class="cfind">助眠这一组最花：深蓝或夜色底加月亮几乎成了行规（根号324、玫琳凯、GABA 睡眠饮都是），其余靠场景图和模特撑。深蓝可以留，但月亮图形得有自己的做法。</div>
+      </div>
+      <div class="kgrid">
+        <div class="kitem"><div class="kimg"><img src="k4_03.jpg" alt="福记坊 酸枣仁茯苓百合 GABA 块状固体饮料"></div><div class="kcap"><b>福记坊</b>酸枣仁茯苓百合 GABA<span>未见数字</span></div></div>
+        <div class="kitem"><div class="kimg"><img src="k4_04.jpg" alt="益多元 GABA 益生菌固体饮料"></div><div class="kcap"><b>益多元</b>GABA 益生菌 2.5g×10<span>26人付款</span></div></div>
+        <div class="kitem"><div class="kimg"><img src="k4_05.jpg" alt="吉亚多 酸枣仁茯苓固体饮料"></div><div class="kcap"><b>吉亚多</b>酸枣仁茯苓 5g×20<span>100+已售</span></div></div>
+        <div class="kitem"><div class="kimg"><span class="tag">同形态</span><img src="k4_02.jpg" alt="根号324 酸枣仁固体饮料"></div><div class="kcap"><b>根号324</b>酸枣仁固体饮料<span>全网900+</span></div></div>
+        <div class="kitem"><div class="kimg"><img src="k4_06.jpg" alt="玫琳凯怡日健 蔓越莓 GABA 固体饮料"></div><div class="kcap"><b>玫琳凯怡日健</b>蔓越莓 GABA 2g×30<span>全网500+</span></div></div>
+        <div class="kitem"><div class="kimg"><img src="k4_07.jpg" alt="马应龙小满醋 酸枣仁直饮粉"></div><div class="kcap"><b>马应龙小满醋</b>酸枣仁直饮粉 2g×15<span>10+人付款</span></div></div>
+        <div class="kitem"><div class="kimg"><img src="k4_08.jpg" alt="京华维康 百合酸枣仁饮"></div><div class="kcap"><b>京华维康</b>百合酸枣仁饮 10g×12<span>未见数字</span></div></div>
+        <div class="kitem"><div class="kimg"><img src="k4_09.jpg" alt="华培 眠无忧草本固体饮料"></div><div class="kcap"><b>华培</b>眠无忧草本 20g×5袋<span>未见数字</span></div></div>
+        <div class="kitem"><div class="kimg"><img src="k4_01.jpg" alt="GABA 睡眠饮 固体饮料"></div><div class="kcap"><b>GABA 睡眠饮</b>固体饮料<span>未见数字</span></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== 03 设计提取 -->
+<section id="s3">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">03</div>
+      <div>
+        <h2>五种市场语言，落成五套设计</h2>
+        <p>36 个同剂型包装看下来，货架上其实只有四种说话方式；第五种（礼盒）没人做。我们把四种各做到位，再做一套没人做过的——五套不是五个备选，是五个位置的答案。</p>
+      </div>
+    </div>
+
+    <div class="subhead"><h3>五套的来处</h3><span>每一套都能在同剂型里找到出处</span></div>
+    <div class="school">
+      <table>
+        <colgroup><col><col><col><col></colgroup>
+        <thead>
+          <tr><th>市场流派</th><th>谁在用</th><th>他们的共同语言</th><th>对应我们哪一套</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>古方克制派</td>
+            <td>药小七、火星暖暖、菩茵堂、大道居参有</td>
+            <td>米白／浅粉／墨绿底、竖排品名、线描药材或花窗、几乎不写功效词</td>
+            <td class="take">→ <b>A 汉方书卷</b>：整套借骨架，最省事也最像“方”</td>
+          </tr>
+          <tr>
+            <td>药房权威派</td>
+            <td>埤盾、南京同仁堂、北京同仁堂（四川）、世宴</td>
+            <td>白底或深底、药业背书、法定声明压底、大份量装、字重厚</td>
+            <td class="take">→ <b>B 药柜图谱</b>：借“档案感”，把几味药变成看得见的标本卡</td>
+          </tr>
+          <tr>
+            <td>功效直给派</td>
+            <td>沐迎康、贝蓓臻护、吉亚多、马应龙小满醋</td>
+            <td>大字功效句、器官或月亮图形、撞色、模特与场景图</td>
+            <td class="take">→ <b>C 现代配方</b>：只借数据条与撞色，不借喊话式大字</td>
+          </tr>
+          <tr>
+            <td>极简白派</td>
+            <td>浣小亲、易仟天、成康雅贝、Ovilz、京华维康</td>
+            <td>白底 ＋ 单一图形 ＋ 英文副标，弱化食品感</td>
+            <td class="take">→ <b>D 色彩版</b>：走它的反面，用整片品牌色换三米识别</td>
+          </tr>
+          <tr>
+            <td>（市场空白）</td>
+            <td>36 个里没有一个礼盒装</td>
+            <td>—</td>
+            <td class="take no">→ <b>E 礼盒版</b>：没人做过，所以我们不借谁，自己做一套</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="subhead"><h3>三条看得见的事实</h3><span>这是筛选之后才看得见的</span></div>
+    <div class="facts3">
+      <div><b>34 / 36 是盒＋条袋</b><span>形态几乎同质，货架上真正能分开的只剩“脸”：竖排还是横排、留白还是满版、写方名还是写功效。</span></div>
+      <div><b>会写方名的多，会摆方子的少</b><span>用“方名＋独立条袋”讲古方的，只有埤盾、大道居、药小七三家；其余把“古方”当品类词用，主视觉交给图案和功效句。</span></div>
+      <div><b>四种语言，没有一种被两家做全</b><span>古方派赢气质、药房派赢可信、功效派赢远距、白派赢干净。所以我们把五套分别做到位，而不是合成一张中庸的脸。</span></div>
+    </div>
+
+    <div class="subhead"><h3>五套共用的四条底线</h3><span>换风格，不换骨架</span></div>
+    <div class="rules">
+      <div class="rule"><b>竖排四字品名，占盒高 18% 以上</b><p>A／C／D 都用这条；B 与 E 换成“品名独立成块”的读法，识别位置不变。</p></div>
+      <div class="rule"><b>一个画面只出现一枚朱印</b><p>红只用在系列指纹这一处；到礼盒版它变成盒盖的封签，位置不变。</p></div>
+      <div class="rule"><b>60 / 25 / 15 网格</b><p>主视觉六成、信息两成半、法定声明一成半。五套共用同一网格，换风格不用重排。</p></div>
+      <div class="rule"><b>正面不写功效词</b><p>普通食品的红线：助眠、舒压、调理这类词不上正面。风格可以换，这条不换。</p></div>
+    </div>
+
+    <div class="subhead"><h3>所以推荐这一套：A＋</h3><span>用 A 打底，向 B 和 C 各借一件</span></div>
+    <div class="formula">
+      <div class="fcol"><i>A</i><h4>骨架来自 A</h4><p>米白纸面、单色墨线、竖排品名、朱印、信息带——最稳的一层，货架上立刻被认作“古方”。</p></div>
+      <div class="fcol"><i>B</i><h4>借 B 的一块</h4><p>每味药一张小标签牌（人参／茯苓／白扁豆……），把配方从“概念”变成“看得见的几味药”。</p></div>
+      <div class="fcol"><i>C</i><h4>借 C 的一条</h4><p>一条配方比例条，把“几味药、各多少”做成可读的数据——让“方”有据可查，而不是只有气质。</p></div>
+      <div class="fresult"><span>一句话</span><b>一眼是古方，细看有依据。</b></div>
+    </div>
+
+    <div class="subhead"><h3>请您定三件事</h3><span>定了就能进生产稿</span></div>
+    <div class="decide">
+      <article><h4>① 骨架走哪套</h4><p>A 到 E 五套里挑，或 <b>A＋</b>。建议 A＋：A 的稳，配 B 的料和 C 的数据；D 留给线上主图，E 留给礼赠档。</p></article>
+      <article><h4>② 四款主色认不认</h4><p><b>暖赭</b>脾胃、<b>中绿</b>咽喉、<b>暖金深棕</b>补气、<b>深蓝</b>助眠。一色一款，远看分得开。</p></article>
+      <article><h4>③ 范围怎么排</h4><p>四款一次做齐，还是先落 <b>A＋</b> 打样，再决定 <b>D</b>（线上主图）与 <b>E</b>（礼赠档）各铺几款。</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 页脚 ===== -->
+<footer>
+  <div class="wrap">
+    <div>
+      <h3>详细材料在哪</h3>
+      <ul>
+        <li><span>01</span>对标分析 · 同剂型四流派、四款必赢点</li>
+        <li><span>02</span>风格对比 · 五套（含 D 色彩版、E 礼盒版）的定义与取舍</li>
+        <li><span>03</span>设计理念说明 · 结构层与主色分配</li>
+        <li><span>04</span>汇报讲稿 · 九页结构 ＋ 三分钟口述版</li>
+        <li><span>05</span>四款竞品清单 · 36 条固体饮料原文与来源</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>一句话回到设计</h3>
+      <p class="warn">五套不是五选一，是五个位置：<em>A 打底、B 讲可信、C 讲数据、D 抢三米、E 做礼赠</em>。市场那 36 个包装证明，货架缺的不是“更国潮”，是把“方”讲清楚的那一张脸。</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
